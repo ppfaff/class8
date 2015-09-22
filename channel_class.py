@@ -13,11 +13,11 @@ from random import random, randint
 
 
 class SingleChannel():
-    noise_amp = 0.05
+    noise_amp = 0.05e-12
     debug = False
     def __init__(self):
         self.dt = 1e-5
-        self.interval = 500e-3
+        self.interval = 5.0
         self.mean_t_op = 20e-3
         self.mean_t_cl = 10e-3
         self.opens = []
